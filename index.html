@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Message For My Friends</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: white;
+        }
+
+        .container {
+            text-align: center;
+            background: rgba(255,255,255,0.15);
+            padding: 40px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            max-width: 600px;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        #message {
+            display: none;
+            margin-top: 20px;
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+
+        button {
+            padding: 12px 25px;
+            border: none;
+            border-radius: 10px;
+            background: white;
+            color: #2575fc;
+            font-size: 1rem;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        button:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Hey My Friends 👋</h1>
+        <p>I made something special for you.</p>
+
+        <button onclick="showMessage()">Open Message</button>
+
+        <div id="message">
+            <p>
+                Thank you for being part of my life. ❤️
+                I appreciate all the memories, laughs, and support we've shared.
+                No matter where life takes us, you'll always have a special place in my heart.
+            </p>
+            <p>– Your Friend</p>
+        </div>
+    </div>
+
+    <script>
+        function showMessage() {
+            document.getElementById("message").style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
